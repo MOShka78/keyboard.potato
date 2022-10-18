@@ -2,8 +2,8 @@ import serial #подключаем библиотеку для работы с 
 import time #библиотека для организации задержек в программе
 import pyautogui
 ArduinoSerial = serial.Serial('com7',9600) # создаем объект порта последовательной связи с именем ArduinoSerial
-print("fff")
-time.sleep(3) #ждем 2 секунды чтобы установилась последовательная связь
+
+time.sleep(2) #ждем 2 секунды чтобы установилась последовательная связь
 while 1:
     incoming = str (ArduinoSerial.readline()) # считываем данные с последовательного порта связи и печатаем их в виде строки
     print (incoming)
