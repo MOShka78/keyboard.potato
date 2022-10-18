@@ -1,5 +1,3 @@
-#include <Wire.h>
-
 #define pinW 4
 #define pinS 3
 #define pinA 2
