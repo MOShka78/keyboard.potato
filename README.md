@@ -40,8 +40,8 @@ void loop() {
 
   if (analogRead(pinSpace) > 1000) {Serial.println(" "); delay (timer);} 
   else {Serial.println("Space"); delay (timer);}
-  //if (analogRead(pinW) > 1000) {Serial.println(" ");delay (timer);}
-  //else {Serial.println("Forward");delay (timer);}
+  if (analogRead(pinW) > 1000) {Serial.println(" ");delay (timer);}
+  else {Serial.println("Forward");delay (timer);}
   if (analogRead(pinA) > 1000) {Serial.println(" ");delay (timer);}
   else {Serial.println("Left");delay (timer);}
   if (analogRead(pinS) > 1000) {Serial.println(" ");delay (timer);}
