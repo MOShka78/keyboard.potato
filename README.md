@@ -61,7 +61,7 @@ import pyautogui #Библиотека для нажатия клавиш
 ArduinoSerial = serial.Serial('com7',9600) # создаем объект порта последовательной связи с именем ArduinoSerial
 
 time.sleep(2) #ждем 2 секунды чтобы установилась последовательная связь
-while 1:
+while 1: #Запускаем бесконечный цикл
     incoming = str (ArduinoSerial.readline()) # считываем данные с последовательного порта связи и печатаем их в виде строки
     print (incoming)
 
@@ -75,5 +75,5 @@ while 1:
         pyautogui.press('a')
     if 'Right' in incoming:
         pyautogui.press('d')
-    incoming = ""  //обнуляем значение
+    incoming = ""  #обнуляем значение
 ```
